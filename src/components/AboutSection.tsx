@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import profileImage from '../assets/ProfileDP.jpg';
 
 function AboutSection() {
   return (
@@ -7,44 +8,40 @@ function AboutSection() {
       <div className="bg-white rounded-lg shadow-md p-8">
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300"
-            alt="Developer"
-            className="w-48 h-48 rounded-full object-cover"
+            src={profileImage}
+            alt="Snehit Vaddi"
+            className="w-48 h-48 rounded-full object-cover ring-4 ring-gray-100 shadow-lg"
           />
           
           <div className="flex-1">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">About the Developer</h2>
-            <p className="text-gray-700 mb-6">
-              With over a decade of experience in machine learning and artificial intelligence,
-              I've worked on numerous projects across various domains. I started BuyMLProjects.com
-              to help others learn ML through practical, production-ready projects that solve real-world problems.
+            <p className="text-lg text-gray-600 mb-6">
+              Hi, I'm Snehit Vaddi, a Machine Learning Engineer passionate about creating practical AI solutions. 
+              I started BuyMLProjects.com to help others learn ML through production-ready projects that solve real-world problems.
             </p>
             
-            <div className="flex space-x-4">
+            <div className="flex space-x-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/snehitvaddi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-700 hover:text-blue-600"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                <Github className="h-5 w-5 mr-2" />
-                GitHub
+                <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/snehitvaddi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-700 hover:text-blue-600"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                <Linkedin className="h-5 w-5 mr-2" />
-                LinkedIn
+                <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="mailto:your.email@example.com"
-                className="flex items-center text-gray-700 hover:text-blue-600"
+                href="mailto:vaddisnehit@gmail.com"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                <Mail className="h-5 w-5 mr-2" />
-                Email
+                <Mail className="w-6 h-6" />
               </a>
             </div>
           </div>

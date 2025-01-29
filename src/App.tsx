@@ -1,8 +1,53 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown, ArrowRight, Sparkles } from 'lucide-react';
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 import AboutSection from './components/AboutSection';
+
+function RollingText() {
+  return (
+    <div className="relative h-14 overflow-hidden my-4">
+      <div className="absolute animate-roll">
+        <span className="block h-14 text-blue-600 leading-[3.5rem]">Machine Learning</span>
+        <span className="block h-14 text-blue-600 leading-[3.5rem]">Data Science</span>
+        <span className="block h-14 text-blue-600 leading-[3.5rem]">GenAI & LLMs</span>
+        <span className="block h-14 text-blue-600 leading-[3.5rem]">NLP</span>
+        <span className="block h-14 text-blue-600 leading-[3.5rem]">Machine Learning</span>
+      </div>
+    </div>
+  );
+}
+
+function PromoTag() {
+  return (
+    <div className="relative w-48 h-48">
+      <div className="absolute inset-0">
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-full h-full origin-center"
+            style={{
+              transform: `rotate(${i * 30}deg)`,
+            }}
+          >
+            <div className="absolute top-0 left-1/2 w-2 h-6 bg-red-500 transform -translate-x-1/2 origin-bottom scale-y-0 animate-spike"></div>
+          </div>
+        ))}
+
+        <div className="absolute inset-2 bg-gray-800 rounded-full shadow-xl flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+          <div className="text-3xl font-bold text-white mb-1">45% OFF</div>
+          <div className="text-lg font-medium text-white">For Students</div>
+        </div>
+
+        <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+          <div className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
+            Limited Time!
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -96,20 +141,29 @@ function App() {
       <Navbar currentSection={currentSection} setCurrentSection={setCurrentSection} />
       
       {currentSection === 'home' && (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Learn Machine Learning Through Ready-to-Use Projects
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Code, Documentation, and Expert Guidance – All in One Place
-            </p>
-            <button
-              onClick={() => setCurrentSection('projects')}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
-            >
-              Explore All Projects
-            </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-16 space-y-8 lg:space-y-0">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+                Master
+                <RollingText />
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                Get production-ready ML projects with source code, documentation, and expert guidance. 
+                Perfect for portfolios, learning, and final year projects.
+              </p>
+              <div className="flex items-center">
+                <button
+                  onClick={() => setCurrentSection('projects')}
+                  className="group inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200"
+                >
+                  <Sparkles className="w-5 h-5 mr-2" />
+                  Explore & Buy
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </div>
+            <PromoTag />
           </div>
 
           <div className="space-y-12">

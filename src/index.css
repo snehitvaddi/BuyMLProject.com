@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes roll {
+  0%, 15% {
+    transform: translateY(0);
+  }
+  25%, 40% {
+    transform: translateY(-3.5rem);
+  }
+  50%, 65% {
+    transform: translateY(-7rem);
+  }
+  75%, 90% {
+    transform: translateY(-10.5rem);
+  }
+  100% {
+    transform: translateY(-14rem);
+  }
+}
+
+.animate-roll {
+  animation: roll 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,4 +37,67 @@
 
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes ribbon-wave {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+.ribbon-animate {
+  animation: ribbon-wave 3s ease-in-out infinite;
+}
+
+@keyframes tag-float {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.tag-animate {
+  animation: tag-float 4s ease-in-out infinite;
+}
+
+/* Add a subtle shine effect */
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes spike {
+  0%, 100% {
+    transform: scaleY(0.7) translateY(-4px);
+  }
+  50% {
+    transform: scaleY(1) translateY(-2px);
+  }
+}
+
+.animate-spike {
+  animation: spike 2s ease-in-out infinite;
+  animation-delay: calc(var(--spike-delay, 0) * 100ms);
 }
