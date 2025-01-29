@@ -14,7 +14,7 @@ function App() {
       summary: "A project implementing Retrieval-Augmented Generation (RAG) to enhance the generation capabilities of language models by incorporating external knowledge sources.",
       techStack: ["Python", "PyTorch", "Transformers", "RAG"],
       githubUrl: "https://github.com/snehitvaddi/RAG-Anything",
-      thumbnail: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://www.luxoft.com/files/blog-posts/2023/10/document-retrieval-augmented-generation-using-generative-ai-a-comprehensive-overview/chart-1.png",
       tags: ["⚡ New"],
     },
     {
@@ -23,7 +23,7 @@ function App() {
       summary: "A project utilizing Convolutional Neural Networks (CNNs) to detect five types of skin diseases through image analysis.",
       techStack: ["Python", "TensorFlow", "Keras", "OpenCV"],
       githubUrl: "https://github.com/snehitvaddi/Skin-Disease-Detection-through-Image-Analysis",
-      thumbnail: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-84593-z/MediaObjects/41598_2021_84593_Fig1_HTML.png",
       tags: ["⭐ Most Popular"],
     },
     {
@@ -32,7 +32,7 @@ function App() {
       summary: "A project inspired by NVIDIA's End to End Learning for Self-Driving Cars, focusing on predicting steering angles.",
       techStack: ["Python", "Keras", "NumPy", "Pandas"],
       githubUrl: "https://github.com/snehitvaddi/SelfDriving-Car_Deep-Learning",
-      thumbnail: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://media.istockphoto.com/id/1439437213/photo/self-driving-car-on-a-road.jpg?s=612x612&w=0&k=20&c=ar_TxoR7DPLy1fryEZmNzAE_JUezwQL3LtfhKymon_E=",
       tags: ["🏆 Featured"],
     },
     {
@@ -41,7 +41,7 @@ function App() {
       summary: "A project comparing and analyzing various deep learning models to classify different brain tumor types, achieving 90% accuracy.",
       techStack: ["Python", "TensorFlow", "Keras", "OpenCV"],
       githubUrl: "https://github.com/snehitvaddi/BrainTumorClassification",
-      thumbnail: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://developer-blogs.nvidia.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-26-at-8.36.35-PM.png",
       tags: ["⭐ Most Popular"],
     },
     {
@@ -50,7 +50,7 @@ function App() {
       summary: "A custom object detection project using YOLOv3 on the cloud to detect fire in given frames.",
       techStack: ["Python", "YOLOv3", "OpenCV", "TensorFlow"],
       githubUrl: "https://github.com/snehitvaddi/YOLOv3-Cloud-Based-Fire-Detection",
-      thumbnail: "https://images.unsplash.com/photo-1599171571332-f99900638702?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://journals.sagepub.com/cms/10.1177/01436244221089445/asset/images/large/10.1177_01436244221089445-fig3.jpeg",
       tags: ["🔥 Trending"],
     },
     {
@@ -59,7 +59,7 @@ function App() {
       summary: "An AI-powered desktop application designed to detect vehicle number plates and extract text using OCR.",
       techStack: ["Python", "OpenCV", "Tesseract OCR", "PyQt"],
       githubUrl: "https://github.com/snehitvaddi/License_plate_Detection_and_Text_Extraction",
-      thumbnail: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://blog.camcloud.com/wp-content/uploads/2023/09/lpr-banner2.png",
       tags: ["🏆 Featured"],
     },
     {
@@ -77,7 +77,7 @@ function App() {
       summary: "A Python tool that detects whether a person is wearing a mask in real-time using deep learning techniques.",
       techStack: ["Python", "TensorFlow", "Keras", "OpenCV"],
       githubUrl: "https://github.com/snehitvaddi/FaceMask-Detection-using-Deeplearning",
-      thumbnail: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?auto=format&fit=crop&q=80&w=500",
+      thumbnail: "https://asite.aim.edu/wp-content/uploads/2021/10/9.-WearMaskNet-Real-Time-Face-Mask-Detection.png",
       tags: ["🏆 Featured"],
     },
     {
