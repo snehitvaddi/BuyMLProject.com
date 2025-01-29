@@ -149,7 +149,7 @@ function App() {
                 <RollingText />
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Get production-ready ML projects with source code, documentation, and expert guidance. 
+                Get end-to-end ML projects with code, documentation, and expert guidance. 
                 Perfect for portfolios, learning, and final year projects.
               </p>
               <div className="flex items-center">
