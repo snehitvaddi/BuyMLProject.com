@@ -15,7 +15,7 @@ function App() {
       techStack: ["Python", "PyTorch", "Transformers", "RAG"],
       githubUrl: "https://github.com/snehitvaddi/RAG-Anything",
       thumbnail: "https://www.luxoft.com/files/blog-posts/2023/10/document-retrieval-augmented-generation-using-generative-ai-a-comprehensive-overview/chart-1.png",
-      tags: ["⚡ New"],
+      tags: ["🏆 Featured"],
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ function App() {
       techStack: ["Python", "TensorFlow", "Keras", "OpenCV"],
       githubUrl: "https://github.com/snehitvaddi/Skin-Disease-Detection-through-Image-Analysis",
       thumbnail: "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-84593-z/MediaObjects/41598_2021_84593_Fig1_HTML.png",
-      tags: ["⭐ Most Popular"],
+      tags: ["🏆 Featured"],
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ function App() {
       techStack: ["Python", "Keras", "NumPy", "Pandas"],
       githubUrl: "https://github.com/snehitvaddi/SelfDriving-Car_Deep-Learning",
       thumbnail: "https://media.istockphoto.com/id/1439437213/photo/self-driving-car-on-a-road.jpg?s=612x612&w=0&k=20&c=ar_TxoR7DPLy1fryEZmNzAE_JUezwQL3LtfhKymon_E=",
-      tags: ["🏆 Featured"],
+      tags: ["⭐ Most Popular"],
     },
     {
       id: 4,
@@ -78,7 +78,7 @@ function App() {
       techStack: ["Python", "TensorFlow", "Keras", "OpenCV"],
       githubUrl: "https://github.com/snehitvaddi/FaceMask-Detection-using-Deeplearning",
       thumbnail: "https://asite.aim.edu/wp-content/uploads/2021/10/9.-WearMaskNet-Real-Time-Face-Mask-Detection.png",
-      tags: ["🏆 Featured"],
+      tags: ["🔥 Trending"],
     },
     {
       id: 9,
@@ -127,11 +127,11 @@ function App() {
 
             <div>
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">⚡ Latest Additions</h2>
+                <h2 className="text-2xl font-bold text-gray-900">🔥 Trending Now</h2>
                 <button onClick={() => setCurrentSection('projects')} className="text-blue-600 hover:text-blue-700 text-sm font-medium">View All →</button>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.filter(p => p.tags[0].includes('New')).map((project) => (
+                {projects.filter(p => p.tags[0].includes('Trending')).map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}
               </div>
@@ -144,18 +144,6 @@ function App() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.filter(p => p.tags[0].includes('Popular')).map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">🔥 Trending Now</h2>
-                <button onClick={() => setCurrentSection('projects')} className="text-blue-600 hover:text-blue-700 text-sm font-medium">View All →</button>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.filter(p => p.tags[0].includes('Trending')).map((project) => (
                   <ProjectCard key={project.id} project={project} />
                 ))}
               </div>
