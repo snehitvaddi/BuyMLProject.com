@@ -95,7 +95,7 @@ function App() {
       summary: "A custom object detection project using YOLOv3 on the cloud to detect fire in given frames.",
       techStack: ["Python", "YOLOv3", "OpenCV", "TensorFlow"],
       githubUrl: "https://github.com/snehitvaddi/YOLOv3-Cloud-Based-Fire-Detection",
-      thumbnail: "https://journals.sagepub.com/cms/10.1177/01436244221089445/asset/images/large/10.1177_01436244221089445-fig3.jpeg",
+      thumbnail: "https://intelgic.com/static/img/why-fire-detection.jpg",
       tags: ["🔥 Trending"],
     },
     {
